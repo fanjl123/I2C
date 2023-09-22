@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 Administrator, 123, LIC=IK1BF-60PJ2-749S0-BD9WD-NT05L-EZ3CF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      CMSIS_AGDI.dll V1.32.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+F:\vm_share\I2C\keil\code.uvprojx
+Project File Date:  09/18/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_CMSDK_CM0.s...
+compiling code_def.c...
+compiling main.c...
+i2c.h(17): warning:  #1295-D: Deprecated declaration ReadI2CFIFOState - give arg types
+  char  ReadI2CFIFOState ();
+i2c.h(18): warning:  #1295-D: Deprecated declaration ReadI2CBUFERState - give arg types
+  char  ReadI2CBUFERState ();
+i2c.h(19): warning:  #1295-D: Deprecated declaration ReadI2C_StopFLAG - give arg types
+  char  ReadI2C_StopFLAG ();
+i2c.h(20): warning:  #1295-D: Deprecated declaration ReadI2C_NackFLAG - give arg types
+  char  ReadI2C_NackFLAG ();
+i2c.h(21): warning:  #1295-D: Deprecated declaration I2C_Readbuf - give arg types
+  void  I2C_Readbuf ();
+i2c.h(22): warning:  #1295-D: Deprecated declaration ReadI2C_BytefinishFLAG - give arg types
+  char  ReadI2C_BytefinishFLAG ();
+i2c.h(29): warning:  #1-D: last line of file ends without a newline
+  void I2C_Slv_init();
+i2c.h(29): warning:  #1295-D: Deprecated declaration I2C_Slv_init - give arg types
+  void I2C_Slv_init();
+main.c(12): warning:  #177-D: variable "waterlight_mode"  was declared but never referenced
+  	int waterlight_mode = 1;
+main.c: 9 warnings, 0 errors
+compiling i2c.c...
+i2c.h(17): warning:  #1295-D: Deprecated declaration ReadI2CFIFOState - give arg types
+  char  ReadI2CFIFOState ();
+i2c.h(18): warning:  #1295-D: Deprecated declaration ReadI2CBUFERState - give arg types
+  char  ReadI2CBUFERState ();
+i2c.h(19): warning:  #1295-D: Deprecated declaration ReadI2C_StopFLAG - give arg types
+  char  ReadI2C_StopFLAG ();
+i2c.h(20): warning:  #1295-D: Deprecated declaration ReadI2C_NackFLAG - give arg types
+  char  ReadI2C_NackFLAG ();
+i2c.h(21): warning:  #1295-D: Deprecated declaration I2C_Readbuf - give arg types
+  void  I2C_Readbuf ();
+i2c.h(22): warning:  #1295-D: Deprecated declaration ReadI2C_BytefinishFLAG - give arg types
+  char  ReadI2C_BytefinishFLAG ();
+i2c.h(29): warning:  #1-D: last line of file ends without a newline
+  void I2C_Slv_init();
+i2c.h(29): warning:  #1295-D: Deprecated declaration I2C_Slv_init - give arg types
+  void I2C_Slv_init();
+i2c.c: 8 warnings, 0 errors
+linking...
+.\code.axf: Warning: L6305W: Image does not have an entry point. (Not specified or not set due to multiple choices.)
+Program Size: Code=972 RO-data=88 RW-data=0 ZI-data=2144  
+Finished: 0 information, 1 warning and 0 error messages.
+After Build - User command #1: fromelf -cvf .\code.axf --vhx --32x1 -o code.hex
+After Build - User command #2: fromelf -cvf .\code.axf -o code.txt
+".\code.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.V2M-MPS2_CMx_BSP.1.7.0.pack
+                Keil.V2M-MPS2_CMx_BSP.1.7.0
+                ARM V2M-MPS2 Board Support PACK for Cortex-M System Design Kit Devices
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.7.0\Device\CMSDK_CM0\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
